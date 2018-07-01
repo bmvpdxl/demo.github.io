@@ -12,6 +12,7 @@
 }
 
 #chess{
+  display: block;
   width: 100%;
   height: 100%;
   padding: 15px;
@@ -72,4 +73,18 @@
 #btn-group {
   margin: 20px auto;
   text-align: center;
+}
+
+.project-address {
+  display: block;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  color: #999;
+  font-size: 14px;
+}
+
+.project-address:hover {
+  color: blue;
+  text-decoration: underline;
 }
