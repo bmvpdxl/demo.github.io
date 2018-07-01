@@ -94,6 +94,8 @@ const computerAI = (function () {
             alert('你输了');
           });
           over = true;
+          canBack();
+          canUndo();
         }
       }
     }

@@ -3,7 +3,7 @@
 // 判断是否可以悔棋
 const canBack = function () {
   const btnBack = $('#back');
-  if (round > 0) {
+  if (round > 0 && !over) {
     btnBack.removeAttribute('disabled');
     return true;
   } else {
@@ -15,10 +15,8 @@ const canBack = function () {
 // 是否可以撤销
 const canUndo = function () {
 
-
-
   const btnUndo = $('#undo');
-  if (action.length === round * 2) {
+  if (action.length === round * 2 || over) {
     btnUndo.setAttribute('disabled', true);
     return false;
   } else {

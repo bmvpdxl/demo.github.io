@@ -36,6 +36,8 @@ const step = (function () {
                 alert('你赢了');
               });
               over = true;
+              canBack();
+              canUndo();
             }
           }
         }
