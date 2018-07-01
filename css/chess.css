@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 默认棋盘宽高450px，50px的padding */
+#wrapper {
+  display: block;
+  box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #B9B9B9;
+  width: 450px;
+  height: 450px;
+  margin: 50px auto 0;
+}
+
+#chess{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  position: relative;
+}
+
+#chess-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 450px;
+  z-index: 10;
+}
+
+/* 棋子样式 */
+.piece {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.piece-b {
+  background: radial-gradient(#636766, #000);
+}
+
+.piece-w {
+  background: radial-gradient(#fff, #D1D1D1);
+}
+
+.btn {
+  background: #fff;
+  border-radius: 3px;
+  width: 70px;
+  height: 28px;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  cursor: pointer;
+  transition: 0.1s;
+  outline: none;
+}
+.btn:hover {
+  color: #409eff;
+  border-color: #c6e2ff;
+  background-color: #ecf5ff
+}
+.btn:disabled {
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: #fff;
+  border-color: #ebeef5
+}
+
+#btn-group {
+  margin: 20px auto;
+  text-align: center;
+}

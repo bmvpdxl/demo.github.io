@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>五子棋</title>
+  <link rel="stylesheet" href="css/chess.css">
+</head>
+<body>
+  
+
+  <div id="wrapper">
+    <div id="chess">
+      <!-- 棋盘遮罩，为了方便计算落子 -->
+      <div id="chess-mask"></div>
+      <!-- 默认棋盘15*15  -->
+    </div>
+  </div>
+
+  <div id="btn-group">
+    <button id="reset" class="btn">重置</button>
+    <button id="back" class="btn">悔棋</button>
+    <button id="undo" class="btn">撤销</button>
+  </div>
+  
+
+  <script src="js/global.js"></script>
+  <script src="js/draw.js"></script>
+  <script src="js/algorithm.js"></script>
+  <script src="js/computerAI.js"></script>
+  <script src="js/step.js"></script>
+  <script src="js/cache.js"></script>
+  <script src="js/init.js"></script>
+</body>
+</html>
